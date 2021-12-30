@@ -1,17 +1,17 @@
-# portaudio GO implementation
+# portaudio GO<->C implementation
 
 This package provides an interface to the [PortAudio](http://www.portaudio.com/) audio I/O library.  
 
 To build this package you must first have the PortAudio development headers and libraries installed.  
 
 ### Port Audio Installation
-  MAC
+  - MAC
   brew install portaudio
 
-  WINDOWS
+  - WINDOWS
   Instructions using [MAKE](http://www.portaudio.com/docs/v19-doxydocs/compile_cmake.html)
 
-  POSIX
+  - POSIX
   `apt-get install portaudio19-dev`
 
 Some systems provide a package for this; e.g., on Ubuntu you would want to run .  On other systems you might have to install from source.
