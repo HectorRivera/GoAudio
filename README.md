@@ -1,4 +1,4 @@
-# portaudio GO<->C implementation
+# portaudio GO/C implementation
 
 This package provides an interface to the [PortAudio](http://www.portaudio.com/) audio I/O library.  
 
