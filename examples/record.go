@@ -1,12 +1,13 @@
 package main
 
 import (
-	"github.com/gordonklaus/portaudio"
 	"encoding/binary"
 	"fmt"
 	"os"
 	"os/signal"
 	"strings"
+
+	"github.com/hectorrivera/goaudio"
 )
 
 func main() {
@@ -65,10 +66,10 @@ func main() {
 		chk(f.Close())
 	}()
 
-	portaudio.Initialize()
-	defer portaudio.Terminate()
+	goaudio.Initialize()
+	defer goaudio.Terminate()
 	in := make([]int32, 64)
-	stream, err := portaudio.OpenDefaultStream(1, 0, 44100, len(in), in)
+	stream, err := goaudio.OpenDefaultStream(1, 0, 44100, len(in), in)
 	chk(err)
 	defer stream.Close()
 

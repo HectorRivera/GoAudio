@@ -1,0 +1,4 @@
+github.com/bobertlo/go-mpg123 v0.0.0-20211210004329-c83f21a0fd39 h1:VCejVrz3ZyFZbDZTAawyzqVTPvsqaYkDNriuvqI+Ul4=
+github.com/bobertlo/go-mpg123 v0.0.0-20211210004329-c83f21a0fd39/go.mod h1:mXbpHtCUpJj6n++mw/GWIxTeajLCSA7+uKHc9yP+WBI=
+github.com/hectorrivera/goaudio v0.0.0-20211230143841-c613a1a7c6d3 h1:TwmymZl9Y2O1XGAct4J3I8sxkn/vUvKIn4R/iDu0sQM=
+github.com/hectorrivera/goaudio v0.0.0-20211230143841-c613a1a7c6d3/go.mod h1:CXC6+PIc5wauKaH1LAvIyeTLlV6sGro0PIZliUZ4+dU=

@@ -8,7 +8,7 @@ import (
 	"os/signal"
 
 	"github.com/bobertlo/go-mpg123/mpg123"
-	"github.com/gordonklaus/portaudio"
+	"github.com/hectorrivera/goaudio"
 )
 
 func main() {
@@ -36,10 +36,10 @@ func main() {
 	decoder.FormatNone()
 	decoder.Format(rate, channels, mpg123.ENC_SIGNED_16)
 
-	portaudio.Initialize()
-	defer portaudio.Terminate()
+	goaudio.Initialize()
+	defer goaudio.Terminate()
 	out := make([]int16, 8192)
-	stream, err := portaudio.OpenDefaultStream(0, channels, float64(rate), len(out), &out)
+	stream, err := goaudio.OpenDefaultStream(0, channels, float64(rate), len(out), &out)
 	chk(err)
 	defer stream.Close()
 
